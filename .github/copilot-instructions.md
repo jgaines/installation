@@ -27,7 +27,7 @@
 
 1. Scripts MUST be simple bash scripts
 2. Include only minimal error checking
-3. Use simple linear logic
+3. Use simple linear logic, small regex matches, and basic string manipulation
 4. Limit user choices to y/n only
 
 ## File Organization
