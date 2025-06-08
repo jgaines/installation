@@ -22,25 +22,7 @@ productivity tools.
 
 ```bash
 # Install mise
-curl https://mise.run | sh
-```
-
-```bash
-# added to ~/.zshrc about midway, after all the aliases and such
-[ -x ~/.local/bin/mise ] && eval "$(~/.local/bin/mise activate zsh)"
-```
-
-For other shells, see the [mise
-documentation](https://mise.jdx.dev/getting-started.html#activate-mise).
-
-```bash
-# mise self-update
-mise self-update
-```
-
-```bash
-# check for outdated tools
-mise outdated
+./install_mise.sh
 ```
 
 For new Python versions, I like to run `mise use python@latest` to update
@@ -48,14 +30,9 @@ Python, that way it keeps the old versions. It will delete the latest version if
 you include it in a normal upgrade, which will break and virtual environment
 built on it.
 
-```bash
-# tool upgrades
-mise upgrade  # or just up
-```
-
-The best way to backup the mise config is to just copy the mise.toml file from
+The best way to backup the mise config is to copy the mise.toml file from
 ~/allmise.  As the way I use it, I `mise use` all tools in that folder, then use
-make-local-latest.sh to symlink all installed tools to my ~/.local/latest
+~/bin/make-local-latest.sh to symlink all installed tools to my ~/.local/latest
 directory.
 
 ```bash
