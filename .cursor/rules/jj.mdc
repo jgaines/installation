@@ -1,0 +1,55 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description: Source control workflow and best practices using Jujutsu (jj)
+globs: 
+alwaysApply: true
+---
+# Jujutsu (jj) Source Control Rule
+
+This rule describes the required workflow and best practices for using Jujutsu (jj) as source control in this project.
+
+## Workflow
+
+1. **Always create a new changeset before making any changes:**
+   ```bash
+   jj new -m "short description of your changes"
+   ```
+   - Do this before editing any files.  
+   - If you make changes before creating a new changeset, those changes will be added to the parent changeset, which is usually not what you want.
+
+2. **Viewing changesets and history:**
+   - To view the commit log:
+     ```bash
+     jj log --no-pager
+     ```
+   - The current changeset is marked with `@`.
+   - Uncommitted changesets are marked with `○`.
+   - Pushed changesets are marked with `◆`.
+
+3. **Describing and managing changesets:**
+   - To view the current changeset:
+     ```bash
+     jj show --no-pager
+     ```
+   - To add or change the description of a changeset:
+     ```bash
+     jj desc -m "new description" [changesetID]
+     ```
+     - Omit `[changesetID]` to modify the current changeset.
+
+4. **Best Practices:**
+   - Never edit files before creating a new changeset.
+   - Keep changeset descriptions short and meaningful.
+   - Only push changesets that are ready for sharing.
+
+## Example
+
+```bash
+jj new -m "update documentation"
+# make your changes
+jj show --no-pager
+```
