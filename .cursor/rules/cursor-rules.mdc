@@ -3,10 +3,6 @@ description: How to add or edit Cursor rules in our project
 globs:
 alwaysApply: false
 ---
-# Cursor Rules Location
-
-How to add new cursor rules to the project
-
 1. Always place rule files in PROJECT_ROOT/.cursor/rules/:
     ```
     .cursor/rules/

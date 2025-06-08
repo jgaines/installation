@@ -1,12 +1,8 @@
 ---
-description: 
+description: Rules for writing bash scripts
 globs: 
 alwaysApply: false
 ---
-# Scripts Rule
-
-All scripts in this project must follow these requirements:
-
 1. Scripts must be simple bash scripts.
 2. Include only minimal error checking.
 3. Use simple linear logic.

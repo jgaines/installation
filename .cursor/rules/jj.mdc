@@ -1,17 +1,8 @@
 ---
-description: 
-globs: 
-alwaysApply: false
----
----
 description: Source control workflow and best practices using Jujutsu (jj)
 globs: 
 alwaysApply: true
 ---
-# Jujutsu (jj) Source Control Rule
-
-This rule describes the required workflow and best practices for using Jujutsu (jj) as source control in this project.
-
 ## Workflow
 
 1. **Always create a new changeset before making any changes:**
