@@ -4,6 +4,8 @@ globs:
 alwaysApply: false
 ---
 1. Scripts must be simple bash scripts.
+2. Use "#!/usr/bin/env bash" shebang.
 2. Include only minimal error checking.
 3. Use simple linear logic.
 4. Limit user choices to y/n only.
+5. Text should be limited to ASCII, no fancy icons.
