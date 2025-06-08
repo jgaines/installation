@@ -1,20 +1,29 @@
 #!/bin/bash
 
-# Script to install mise based on documented steps
-# This script installs mise and provides instructions for shell activation
+# This script downloads the mise install script to a temp file, shows it to the
+# user, and asks for confirmation before running
 
 set -e  # Exit on any error
 
-echo "Installing mise..."
+echo "Checking mise installation..."
 
-# Check if mise is already installed
-if command -v mise &> /dev/null; then
-    echo "mise is already installed at $(which mise)"
-    mise --version
-else
-    echo "Installing mise..."
-    curl https://mise.run | sh
+# Download the mise install script to a temp file
+TEMP_SCRIPT=$(mktemp)
+curl -fsSL https://mise.run -o "$TEMP_SCRIPT"
+
+echo "The mise install script has been downloaded to $TEMP_SCRIPT."
+echo "Review the script below. Press q to exit less."
+less "$TEMP_SCRIPT"
+
+echo ""
+read -p "Do you want to proceed with running the mise install script? (y/n): " CONFIRM
+if [[ "$CONFIRM" =~ ^[Yy]$ ]]; then
+    sh "$TEMP_SCRIPT"
     echo "mise installation completed"
+else
+    echo "Installation aborted by user."
+    rm -f "$TEMP_SCRIPT"
+    exit 1
 fi
 
 # Check if mise activation is already in .zshrc
