@@ -17,12 +17,16 @@ if [ ! -s "$TEMP_SCRIPT" ]; then
 fi
 
 echo "The Railpack install script has been downloaded to $TEMP_SCRIPT."
-echo "Review the script below. Press q to exit less."
-less "$TEMP_SCRIPT"
+echo "Review the script below. Press q to exit."
+if command -v bat &> /dev/null; then
+    bat "$TEMP_SCRIPT"
+else
+    less "$TEMP_SCRIPT"
+fi
 
 echo ""
 read -p "Do you want to proceed with running the Railpack install script? (y/n): " CONFIRM
-if [ "$CONFIRM" = "y" ] || [ "$CONFIRM" = "Y" ]; then
+if [[ "$CONFIRM" =~ ^[Yy]$ ]]; then
     sh "$TEMP_SCRIPT"
     echo "Railpack installation completed"
 else

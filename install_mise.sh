@@ -17,8 +17,12 @@ if [ ! -s "$TEMP_SCRIPT" ]; then
 fi
 
 echo "The mise install script has been downloaded to $TEMP_SCRIPT."
-echo "Review the script below. Press q to exit less."
-less "$TEMP_SCRIPT"
+echo "Review the script below. Press q to exit."
+if command -v bat &> /dev/null; then
+    bat "$TEMP_SCRIPT"
+else
+    less "$TEMP_SCRIPT"
+fi
 
 echo ""
 read -p "Do you want to proceed with running the mise install script? (y/n): " CONFIRM
