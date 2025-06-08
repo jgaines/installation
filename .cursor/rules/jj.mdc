@@ -7,8 +7,9 @@ alwaysApply: true
 
 1. **Always create a new changeset before making any changes:**
    ```bash
-   jj new -m "short description of your changes"
+   jj new -m "agent: short description of your changes"
    ```
+   - Any agent generated changeset message should be prefixed with "agent: "
    - Do this before editing any files.  
    - If you make changes before creating a new changeset, those changes will be added to the parent changeset, which is usually not what you want.
 
