@@ -1,16 +1,17 @@
 # Installs
 
 The purpose of this repo is to document what tools I've installed and how I've
-done it.  This is especially important for tools that I forget about for a few
-months/years and then come back to only to have forgotten how I installed the
-tool.  This will also be useful when I upgrade to a new machine or try to move
-my setup to some other environment.
+done it.  This is important for tools that I forget about for a months/years and
+then come back to only to have forgotten how I installed the tool.  This will
+also be useful when I upgrade to a new machine or try to move my setup to some
+other environment.
 
 ## Installation Tools
 
 ### Apt
 
-To date most of my machines have been Debian-based, so I use `apt` to install many packages.
+To date most of my machines have been Debian-based, so I use `apt` to install
+many packages.
 
 TODO: Document all the PPA sources I use and how to set them up.
 
