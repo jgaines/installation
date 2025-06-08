@@ -9,12 +9,12 @@ echo "Installing mise..."
 
 # Check if mise is already installed
 if command -v mise &> /dev/null; then
-    echo "✓ mise is already installed at $(which mise)"
+    echo "mise is already installed at $(which mise)"
     mise --version
 else
     echo "Installing mise..."
     curl https://mise.run | sh
-    echo "✓ mise installation completed"
+    echo "mise installation completed"
 fi
 
 # Check if mise activation is already in .zshrc
@@ -25,9 +25,9 @@ echo ""
 echo "Checking shell activation setup..."
 
 if [ -f "$ZSHRC_FILE" ] && grep -q "mise activate" "$ZSHRC_FILE"; then
-    echo "✓ mise activation is already configured in ~/.zshrc"
+    echo "mise activation is already configured in ~/.zshrc"
 else
-    echo "⚠ mise activation needs to be added to your shell configuration"
+    echo "mise activation needs to be added to your shell configuration"
     echo ""
     echo "Please add the following line to your ~/.zshrc file:"
     echo "  $ACTIVATION_LINE"
