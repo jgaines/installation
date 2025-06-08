@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # This script downloads the mise install script to a temp file, shows it to the
 # user, and asks for confirmation before running
@@ -10,6 +10,11 @@ echo "Checking mise installation..."
 # Download the mise install script to a temp file
 TEMP_SCRIPT=$(mktemp)
 curl -fsSL https://mise.run -o "$TEMP_SCRIPT"
+
+if [ ! -s "$TEMP_SCRIPT" ]; then
+    echo "Failed to download the mise install script."
+    exit 1
+fi
 
 echo "The mise install script has been downloaded to $TEMP_SCRIPT."
 echo "Review the script below. Press q to exit less."
