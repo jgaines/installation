@@ -1,0 +1,13 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Documentation Rule
+
+All documentation in this project must follow these standards:
+
+1. All documentation must be in Markdown format.
+2. Never use notebook format for any documents.
+3. The top-level README.md must describe the repository's purpose and use.
+4. Use meaningful, descriptive file names for documentation (e.g., install_mise.sh, install_brew.sh, backup_brew.sh).

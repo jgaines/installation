@@ -1,0 +1,12 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Organization Rule
+
+All files in this project must follow these organization guidelines:
+
+1. Use clear, descriptive file names.
+2. Follow existing naming patterns.
+3. Group related files logically.
