@@ -27,7 +27,7 @@ fi
 echo ""
 read -p "Do you want to proceed with running the Railpack install script? (y/n): " CONFIRM
 if [[ "$CONFIRM" =~ ^[Yy]$ ]]; then
-    sh "$TEMP_SCRIPT"
+    cat "$TEMP_SCRIPT" | sh
     echo "Railpack installation completed"
 else
     echo "Installation aborted by user."
