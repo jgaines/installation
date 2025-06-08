@@ -5,7 +5,7 @@
 1. ALWAYS create a new changeset BEFORE making any changes:
 
    ```bash
-   jj new -m "description of changes"
+   jj new -m "copilot: description of changes"
    ```
 
 2. ALWAYS verify the current changeset with:
