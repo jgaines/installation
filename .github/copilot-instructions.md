@@ -15,6 +15,8 @@
    jj show --no-pager
    ```
 
+3. NEVER change files outside of this repository unless explicitly instructed.   
+
 ## Documentation Rules
 
 1. ALL documentation must be in Markdown format
