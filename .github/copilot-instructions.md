@@ -14,7 +14,7 @@
    jj log -n 3 --no-pager
    jj show --no-pager
    ```
-- After completing changes, ALWAYS update the changeset with my prompt and your response:
+- After completing changes, ALWAYS update the changeset with my prompt and your response in ASCII:
 
    ```bash
    jj desc -m '''copilot: description of changes
@@ -23,7 +23,7 @@
 
    copilot: Here is a cool script that does X, Y, and Z.
 
-   ✅ Script Created Successfully
+   Script Created Successfully
    The really_cool.sh script:
 
    Takes a location parameter (work or play) as required, etc.
