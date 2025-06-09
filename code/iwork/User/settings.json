@@ -1,0 +1,210 @@
+{
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "[red]": {},
+  "ansible.lightspeed.enabled": false,
+  "bitbucket-pull-requests.serverURL": "https://bosenbbucket1.netscout.com:8443",
+  "cSpell.diagnosticLevel": "Hint",
+  "cSpell.userWords": [
+    "benbow",
+    "direnv",
+    "EMDB",
+    "envrc",
+    "isort",
+    "jgaines",
+    "Justfile",
+    "levelname",
+    "localzone",
+    "netscout",
+    "pipx",
+    "pyproject",
+    "Securden",
+    "tzlocal",
+    "virtualenv",
+    "werkzeug"
+  ],
+  "code-runner.executorMap": {
+    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "ahk": "autohotkey",
+    "applescript": "osascript",
+    "autoit": "autoit3",
+    "bash": "bash",
+    "bat": "cmd /c",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "clojure": "lein exec",
+    "coffeescript": "coffee",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "crystal": "crystal",
+    "csharp": "scriptcs",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "dart": "dart",
+    "erlang": "escript",
+    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fsharp": "fsi",
+    "gleam": "gleam run -m $fileNameWithoutExt",
+    "go": "go run",
+    "groovy": "groovy",
+    "haskell": "runghc",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "javascript": "node",
+    "julia": "julia",
+    "kit": "kitc --run",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    "lisp": "sbcl --script",
+    "lua": "lua",
+    "mojo": "mojo run",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "ocaml": "ocaml",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "perl": "perl",
+    "perl6": "perl6",
+    "php": "php",
+    "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "python": "python -u",
+    "r": "Rscript",
+    "racket": "racket",
+    "ruby": "ruby",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "sass": "sass --style expanded",
+    "scala": "scala",
+    "scheme": "csi -script",
+    "scss": "scss --style expanded",
+    "shellscript": "bash",
+    "sml": "cd $dir && sml $fileName",
+    "spwn": "spwn build",
+    "swift": "swift",
+    "typescript": "ts-node",
+    "v": "v run",
+    "vbscript": "cscript //Nologo",
+    "zig": "zig run"
+  },
+  "duplicatedCode.exclude": [
+    "**/(node_modules|coverage|dist|build|vendor|storage|public|stubs|.git)/**",
+    "**/.*",
+    "**/_*",
+    "**/*lock*",
+    "**/LICENSE",
+    "**/.*/**"
+  ],
+  "duplicatedCode.options": {
+    "absolute": true,
+    "gitignore": true,
+    "maxLines": 1000,
+    "minLines": 3,
+    "minTokens": 60,
+    "noSymlinks": false,
+    "silent": true
+  },
+  "editor.fontFamily": "FiraCode Nerd Font Mono, 'monospace', monospace",
+  "editor.fontVariations": false,
+  "editor.overviewRulerBorder": false,
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "errorLens.excludeBySource": [
+    "cSpell"
+  ],
+  "errorLens.messageEnabled": false,
+  "files.associations": {
+    "01proxy": "debsources"
+  },
+  "files.autoSave": "onFocusChange",
+  "git.blame.editorDecoration.enabled": true,
+  "git.confirmSync": false,
+  "git.openRepositoryInParentFolders": "never",
+  "gitblame.inlineMessageNoCommit": "New Shit",
+  "gitblame.revsFile": [
+    ".git-blame-ignore-revs"
+  ],
+  "github.copilot.chat.codeGeneration.instructions": [
+    {
+      "file": "${workspaceFolder}/.github/copilot-instructions.md"
+    }
+  ],
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  "github.copilot.chat.testGeneration.instructions": [
+    {
+      "file": "${workspaceFolder}/.github/copilot-instructions.md"
+    }
+  ],
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.nextEditSuggestions.fixes": true,
+  "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
+  "indentRainbow.errorColor": "rgba(128,32,32,0.2)",
+  "markdownlint.config": {
+    "MD034": false
+  },
+  "mise.binPath": "/home/jgaines/.local/bin/mise",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "projectManager.git.baseFolders": [
+    "~/git/eng-tools",
+    "~/git/administrator",
+    "~/projects"
+  ],
+  "projectManager.tags": [
+    "Personal",
+    "Work",
+    "POC",
+    "WIP"
+  ],
+  "pyrefly.lspPath": "/home/jgaines/.local/bin/pyrefly",
+  "python.analysis.aiCodeActions": {},
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+  "python.experiments.optOutFrom": [
+    "pythonTerminalEnvVarActivation"
+  ],
+  "python.languageServer": "None",
+  "python.pyrefly.disableLanguageServices": true,
+  "red.redDir": "$HOME/apps/red",
+  "redhat.telemetry.enabled": false,
+  "roc-lang.language-server.exe": "/home/jgaines/.loca/bin/roc_language_server",
+  "ruff.interpreter": [
+    "${projectdir}/.venv/bin/python"
+  ],
+  "ruff.path": [
+    "ruff"
+  ],
+  "terminal.integrated.automationProfile.linux": {
+    "icon": "terminal-bash",
+    "path": "bash"
+  },
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "args": [
+        "--login"
+      ],
+      "icon": "terminal-bash",
+      "path": "/bin/bash"
+    },
+    "zsh": {
+      "icon": "terminal",
+      "path": "/bin/zsh"
+    }
+  },
+  "v-analyzer.serverPath": "~/.config/v-analyzer/bin/v-analyzer",
+  "visualjj.showSourceControlColocated": true,
+  "workbench.colorTheme": "Default Light Modern",
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.ipynb": "jupyter-notebook",
+    "*.md": "default"
+  },
+  "workbench.iconTheme": "helium-icon-theme",
+  "write-good.write-good-config": {},
+  "zig.path": "zig",
+  "zig.zls.enabled": "on"
+}

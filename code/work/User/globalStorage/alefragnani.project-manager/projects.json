@@ -1,0 +1,389 @@
+[
+	{
+		"name": "sustaining-tracker",
+		"rootPath": "/home/jgaines/git/eng-tools/sustaining-tracker/sustaining-tracker.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "bin",
+		"rootPath": "/home/jgaines/bin",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "adproxy",
+		"rootPath": "/home/jgaines/git/jgaines/adproxy",
+		"paths": [],
+		"tags": [
+			"POC"
+		],
+		"enabled": true
+	},
+	{
+		"name": "barman",
+		"rootPath": "/home/jgaines/git/administrator/barman",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ldap-proxy",
+		"rootPath": "/home/jgaines/git/eng-tools/ldap-proxy",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "postgres-upgrader",
+		"rootPath": "/home/jgaines/git/docker/postgres-upgrader",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "goto",
+		"rootPath": "/home/jgaines/projects/goto",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "vefixer",
+		"rootPath": "/home/jgaines/git/jgaines/vefixer",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "check-cores",
+		"rootPath": "/home/jgaines/git/eng-tools/check-cores/apache/check-cores.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "svn",
+		"rootPath": "/home/jgaines/git/eng-tools/svn/svn.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "docs-svn",
+		"rootPath": "/home/jgaines/git/eng-tools/docs-svn/docs-svn.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ansible",
+		"rootPath": "/home/jgaines/git/eng-tools/ansible",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "gitlab",
+		"rootPath": "/home/jgaines/git/eng-tools/gitlab/gitlab.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "zprezto",
+		"rootPath": "/home/jgaines/.zprezto/.zprezto.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "zephyr_test_view",
+		"rootPath": "/home/jgaines/git/eng-tools/zephyr_test_view/zephyr_test_view.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "tps-server",
+		"rootPath": "/home/jgaines/git/eng-tools/tps-server/tps-server.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "db-restore",
+		"rootPath": "/home/jgaines/git/eng-tools/db-restore/db-restore.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "emdb",
+		"rootPath": "/home/jgaines/git/eng-tools/emdb/emdb.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "regression-attachments",
+		"rootPath": "/home/jgaines/git/eng-tools/regression-attachments/regression-attachments.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "capssh",
+		"rootPath": "/home/jgaines/git/eng-tools/capssh/capssh.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ubuntu-pkg-dev",
+		"rootPath": "/home/jgaines/git/eng-tools/ubuntu-pkg-dev/ubuntu-pkg-dev.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "qa",
+		"rootPath": "/home/jgaines/git/qa-tools/qa/qa.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "fnood",
+		"rootPath": "/home/jgaines/git/eng-tools/fnood/fnood.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "gunicorn-nginx",
+		"rootPath": "/home/jgaines/git/eng-tools/gunicorn-nginx/gunicorn-nginx.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "roc",
+		"rootPath": "/home/jgaines/projects/roc/roc.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "reserver",
+		"rootPath": "/home/jgaines/git/eng-tools/reserver/reserver.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "am",
+		"rootPath": "/home/jgaines/git/eng-tools/am/am.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "regression",
+		"rootPath": "/home/jgaines/git/administrator/regression/regression.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "redirector",
+		"rootPath": "/home/jgaines/git/administrator/redirector/redirector.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "url",
+		"rootPath": "/home/jgaines/git/eng-tools/url/url.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "license-server",
+		"rootPath": "/home/jgaines/git/eng-tools/license-server/license-server.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "yazi-config",
+		"rootPath": "/home/jgaines/.config/yazi",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "grist-exploration",
+		"rootPath": "/home/jgaines/git/eng-tools/grist-exploration/grist-exploration.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "audit",
+		"rootPath": "/home/jgaines/git/eng-tools/audit/audit.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "device42portal",
+		"rootPath": "/home/jgaines/git/eng-tools/device42portal/device42portal.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "qa-post-merge",
+		"rootPath": "/home/jgaines/git/eng-tools/qa-post-merge/qa-post-merge.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "maldetect",
+		"rootPath": "/usr/local/maldetect",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "qa-repo-cron",
+		"rootPath": "/home/jgaines/git/eng-tools/qa-repo-cron/qa-repo-cron.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "tedit",
+		"rootPath": "/home/jgaines/git/eng-tools/tedit/tedit.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "apt-server",
+		"rootPath": "/home/jgaines/git/eng-tools/apt-server/apt-server.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "barman",
+		"rootPath": "/home/jgaines/git/administrator/barman/barman.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "v1-api",
+		"rootPath": "/home/jgaines/git/eng-tools/v1-api/v1-api.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "testrail",
+		"rootPath": "/home/jgaines/git/eng-tools/testrail/testrail.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "haste",
+		"rootPath": "/home/jgaines/git/eng-tools/haste/haste.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "jenkins",
+		"rootPath": "/home/jgaines/git/eng-tools/jenkins/jenkins.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "rust",
+		"rootPath": "/home/jgaines/projects/rust/rust.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "ca",
+		"rootPath": "/home/jgaines/git/administrator/ca/ca.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "v1_archive",
+		"rootPath": "/home/jgaines/git/eng-tools/v1_archive/v1_archive.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "issue-api (the whole mess)",
+		"rootPath": "/home/jgaines/git/eng-tools/python-issue-api/python-issue-api.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "pygui",
+		"rootPath": "/home/jgaines/projects/pygui/pygui.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "bugzilla",
+		"rootPath": "/home/jgaines/git/eng-tools/bugzilla/bugzilla.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "vlanupdate",
+		"rootPath": "/home/jgaines/git/eng-tools/vlanupdate/vlanupdate.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "jjtest",
+		"rootPath": "/home/jgaines/git/jgaines/jjtest/src/jjtest.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "netscoutcert",
+		"rootPath": "/home/jgaines/git/eng-tools/netscoutcert/netscoutcert.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "installation",
+		"rootPath": "/home/jgaines/installation/installation.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	}
+]
