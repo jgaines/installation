@@ -2,20 +2,35 @@
 
 ## CRITICAL: Source Control Protocol
 
-1. ALWAYS create a new changeset BEFORE making any changes:
+- ALWAYS create a new changeset BEFORE making any changes:
 
    ```bash
    jj new -m "copilot: description of changes"
    ```
 
-2. ALWAYS verify the current changeset with:
+- ALWAYS verify the current changeset with:
 
    ```bash
-   jj log --no-pager
+   jj log -n 3 --no-pager
    jj show --no-pager
    ```
+- After completing changes, ALWAYS update the changeset with my prompt and your response:
 
-3. NEVER change files outside of this repository unless explicitly instructed.   
+   ```bash
+   jj desc -m '''copilot: description of changes
+   
+   jgaines: I want a cool script.
+
+   copilot: Here is a cool script that does X, Y, and Z.
+
+   ✅ Script Created Successfully
+   The really_cool.sh script:
+
+   Takes a location parameter (work or play) as required, etc.
+   '''
+   ```
+
+- NEVER change files outside of this repository unless explicitly instructed.   
 
 ## Documentation Rules
 
@@ -38,16 +53,3 @@
 - Use clear, descriptive file names
 - Follow existing naming patterns
 - Group related files logically
-
-## AI Assistant Protocol
-
-- ALWAYS check these instructions before making changes
-- ALWAYS create a new changeset first
-- ALWAYS verify changes before proceeding
-- ALWAYS follow the documentation and scripting rules
-- ALWAYS use Markdown for documentation
-- NEVER use notebook format
-- ALWAYS use descriptive file names
-- ALWAYS keep scripts simple and linear
-
-These instructions MUST be followed for ALL changes to this repository.
