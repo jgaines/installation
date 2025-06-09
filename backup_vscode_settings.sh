@@ -30,7 +30,7 @@ VSCODE_CONFIG_DIR="$HOME/.config/Code"
 VSCODE_INSIDERS_CONFIG_DIR="$HOME/.config/Code - Insiders"
 
 # Define backup destination paths
-REPO_CODE_DIR="./code"
+REPO_CODE_DIR="./vscode_settings"
 VSCODE_BACKUP_DIR="$REPO_CODE_DIR/$LOCATION"
 VSCODE_INSIDERS_BACKUP_DIR="$REPO_CODE_DIR/i$LOCATION"
 
@@ -80,7 +80,7 @@ backup_files() {
 
 echo "Starting VS Code settings backup for location: $LOCATION"
 
-# Create main code directory
+# Create main vscode_settings directory
 create_dir "$REPO_CODE_DIR"
 
 # Backup VS Code settings
