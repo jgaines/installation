@@ -5,6 +5,8 @@
 
 set -e  # Exit on any error
 
+cd $(dirname $0) || exit 1
+
 echo "Checking Railpack installation..."
 
 # Download the Railpack install script to a temp file
