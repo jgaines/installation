@@ -53,19 +53,26 @@ if [ -n "$SHELL_CONFIG" ] && [ -f "$SHELL_CONFIG" ]; then
     else
         echo "Homebrew activation needs to be added to your shell configuration"
         echo ""
-        echo "Please add Homebrew to your PATH by adding these lines to $SHELL_CONFIG:"
-        echo '  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"'
+        echo "Add Homebrew paths to your PATH array and INFOPATH in $SHELL_CONFIG:"
         echo ""
-        echo "You can do this by running:"
-        echo '  echo '\''eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"'\'' >> '"$SHELL_CONFIG"
+        echo "In your path array, add:"
+        echo '  /home/linuxbrew/.linuxbrew/bin'
+        echo '  /home/linuxbrew/.linuxbrew/sbin'
         echo ""
-        echo "After adding the line, restart your shell or run:"
+        echo "And add this export line:"
+        echo '  export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:${INFOPATH:-}";'
+        echo ""
+        echo "Note: This is different from the standard 'brew shellenv' approach"
+        echo "and integrates better with custom PATH management."
+        echo ""
+        echo "After adding these lines, restart your shell or run:"
         echo "  source $SHELL_CONFIG"
     fi
 else
     echo "Could not detect shell configuration file"
     echo "Please manually add Homebrew to your PATH:"
-    echo '  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"'
+    echo "Add /home/linuxbrew/.linuxbrew/bin and /home/linuxbrew/.linuxbrew/sbin to PATH"
+    echo 'Export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:${INFOPATH:-}"'
 fi
 
 echo ""
