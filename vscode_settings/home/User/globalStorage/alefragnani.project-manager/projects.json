@@ -1,0 +1,86 @@
+[
+	{
+		"name": "ttkbootstrap",
+		"rootPath": "/home/jgaines/projects/ttkbootstrap",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "valheim_manager",
+		"rootPath": "/home/jgaines/projects/valheim_manager",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "dearpygui",
+		"rootPath": "/home/jgaines/projects/dearpygui",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "nimval",
+		"rootPath": "/home/jgaines/projects/nimval",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "toga",
+		"rootPath": "/home/jgaines/projects/toga",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "MoreCharcoalDrops",
+		"rootPath": "/home/jgaines/projects/MoreCharcoalDrops",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "MoreClayDrops",
+		"rootPath": "/home/jgaines/projects/MoreClayDrops",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "bin",
+		"rootPath": "/home/jgaines/bin/bin.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "BM-Exosphere configs",
+		"rootPath": "/home/jgaines/.local/share/PrismLauncher/instances/BM- Exosphere/config.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "shell_configs",
+		"rootPath": "/home/jgaines/.config/shell_configs.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "zigup",
+		"rootPath": "/home/jgaines/projects/zigup/zigup.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "agent-notes",
+		"rootPath": "/home/jgaines/projects/agent-notes/agent-notes.code-workspace",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	}
+]
