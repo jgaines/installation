@@ -1,0 +1,11 @@
+{
+    "github.copilot.chat.welcomeMessage": "always",
+    "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+    "github.copilot.chat.codeGeneration.instructionFile": ".github/copilot-instructions.md",
+    "files.associations": {
+        ".copilot-instructions.md": "markdown"
+    },
+    "workbench.editorAssociations": {
+        "*.md": "default"
+    }
+}
