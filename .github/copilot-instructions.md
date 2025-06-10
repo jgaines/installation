@@ -1,45 +1,9 @@
 # AI Assistant Instructions
 
-## CRITICAL: Source Control Protocol
+**Source Control Protocol:** ALWAYS create new changeset with `jj new -m "copilot: description"`, verify with `jj log -n 3 --no-pager`, update changeset by writing to temp file then `jj desc --stdin < file_with_updated_desc`, delete temp file after use. NEVER change files outside repository unless instructed.
 
-- ALWAYS create a new changeset BEFORE making any changes:
-```bash
-jj new -m "copilot: description of changes"
-```
+**Documentation:** Use Markdown format only, never notebook format. README.md describes repository purpose. Use meaningful file names (install_mise.sh, install_brew.sh, backup_brew.sh).
 
-- ALWAYS verify the current changeset with:
-```bash
-jj log -n 3 --no-pager
-jj show --no-pager
-```
+**Scripts:** Simple bash with `#!/usr/bin/env bash`, minimal error checking, simple linear logic, y/n choices only, include `cd $(dirname $0) || exit 1` after setting flags.
 
-- After changes, ALWAYS update the changeset with my prompt and your response, by writing the text directly to a temp file then piping it into jj:
-
-```bash
-jj desc --stdin < file_with_updated_desc
-```
-- Don't forget to delete the temp file after use
-
-- NEVER change files outside of this repository unless explicitly instructed.   
-
-## Documentation Rules
-
-- ALL documentation must be in Markdown format
-- NEVER use notebook format
-- README.md must describe repository purpose and use
-- Use meaningful, descriptive file names. Examples: install_mise.sh, install_brew.sh, backup_brew.sh
-
-## Scripting Requirements
-
-- Scripts MUST be simple bash scripts
-- Include only minimal error checking
-- Use "#!/usr/bin/env bash" shebang.
-- Use simple linear logic, small regex matches, and basic string manipulation
-- Limit user choices to y/n only
-- Scripts should include 'cd $(dirname $0) || exit 1' after setting flags to ensure they run in the correct directory
-
-## File Organization
-
-- Use clear, descriptive file names
-- Follow existing naming patterns
-- Group related files logically
+**Files:** Use clear descriptive names, follow existing patterns, group logically.
