@@ -13,20 +13,12 @@ jj log -n 3 --no-pager
 jj show --no-pager
 ```
 
-- After completing changes, ALWAYS update the changeset with my prompt and your response, by writing the text to a temp file then piping it into jj:
+- After changes, ALWAYS update the changeset with my prompt and your response, by writing the text directly to a temp file then piping it into jj:
 
 ```bash
-temp_file=$(mktemp)
-cat <<EOF > "$temp_file"
-copilot: description of changes
-
-jgaines: I want a cool script.
-
-copilot: Here is a cool script that does X, Y, and Z.
-EOF
-jj desc --stdin < "$temp_file"
-rm -f "$temp_file"
+jj desc --stdin < file_with_updated_desc
 ```
+- Don't forget to delete the temp file after use
 
 - NEVER change files outside of this repository unless explicitly instructed.   
 
