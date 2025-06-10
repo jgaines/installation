@@ -1,21 +1,22 @@
 # Installs
 
 The purpose of this repo is to document what tools I've installed and how I've
-done it.  This is important for tools that I forget about for a months/years and
-then come back to only to have forgotten how I installed the tool.  This will
-also be useful when I upgrade to a new machine or try to move my setup to some
-other environment.
+done it.  This is important for tools that I forget about for months/years and
+then come back to having forgotten how I installed the tool.  This will also be
+useful when I upgrade to a new machine or try to move my setup to some other
+environment.
 
 ## Installation Tools
 
 ### Apt
 
-To date most of my machines have been Debian-based, so I use `apt` to install
-many packages.
+Most of my machines have been Debian-based, so I use `apt` to install
+packages.
 
 #### Custom PPAs and Package Sources
 
-This system uses the following custom PPAs and package sources in `/etc/apt/sources.list.d/`:
+This system uses the following custom PPAs and package sources in
+`/etc/apt/sources.list.d/`:
 
 - **Adoptium (Eclipse Temurin JDK)** - `adoptium.list`
   - Provides OpenJDK builds from Eclipse Foundation
@@ -75,7 +76,7 @@ The best way to backup the mise config is to copy the mise.toml file from
 directory.
 
 ```bash
-# should reinstall most of the tools, some like Python have multiple versions
+# should reinstall most of the tools, some like Python have more than one version
 cat ~/allmise/mise.toml | grep -vE '^[\[#]' | sed 's/ = "/@/g' | tr -d '"' | xargs -n1 echo
 ```
 
@@ -88,13 +89,13 @@ mise install uv
 ```
 
 ```bash
-# to list all tools currently installed by uv
+# to list all tools installed by uv
 uv tool list | grep -vE '^-' | cut -d' ' -f1
 ```
 
 ### Homebrew
 
-My fallback for installing tools is Homebrew.  I've run into a few tools that
+My fallback for installing tools is Homebrew.  I've run into some tools that
 are easier to install with Homebrew, the downside is that it often installs a
 lot of dependencies that are redundant with what I already have installed
 through apt.
@@ -120,6 +121,6 @@ brew upgrade
 ```
 
 ```bash
-# generate a Brefile that can be used to restore all installed packages
+# generate a Brewfile that can restore all installed packages
 brew bundle dump --force --file=~/brewfile
 ```
