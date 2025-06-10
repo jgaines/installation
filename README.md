@@ -13,7 +13,46 @@ other environment.
 To date most of my machines have been Debian-based, so I use `apt` to install
 many packages.
 
-TODO: Document all the PPA sources I use and how to set them up.
+#### Custom PPAs and Package Sources
+
+This system uses the following custom PPAs and package sources in `/etc/apt/sources.list.d/`:
+
+- **Adoptium (Eclipse Temurin JDK)** - `adoptium.list`
+  - Provides OpenJDK builds from Eclipse Foundation
+- **Back In Time** - `bit-team-stable-jammy.list`
+  - Backup tool for Linux
+- **Mesa RC** - `ernstp-mesarc-jammy.list`
+  - Release candidate builds of Mesa graphics drivers
+- **Fish Shell** - `fish-shell-release-4-jammy.list`
+  - Modern shell with syntax highlighting and autosuggestions
+- **Fury.io (NuShell & Carapace)** - `fury.list`
+  - NuShell and rsteube's Carapace shell completion
+- **GitHub CLI** - `github-cli.list`
+  - Official GitHub command line interface
+- **Google Chrome** - `google-chrome.list`
+  - Google Chrome web browser
+- **vtrefny Tools** - `home:vtrefny.list`
+  - OpenSUSE Build Service packages
+- **Microsoft Products** - `microsoft-prod.list`
+  - Microsoft development tools and runtimes
+- **Minetest** - `minetestdevs-stable-jammy.list`
+  - Open source voxel game engine
+- **Modular** - `modular-installer.list`
+  - Modular AI development platform and Mojo language
+- **Mono** - `mono-official-stable.list`
+  - .NET framework implementation for Linux
+- **Oracle VirtualBox** - `oracle-virtualbox.list`
+  - Virtualization software
+- **CKB Next** - `tatokis-ckb-next-git-jammy.list`
+  - Corsair keyboard/mouse driver and configuration tool
+- **VS Code** - `vscode.list`
+  - Microsoft Visual Studio Code editor
+- **Warp Terminal** - `warpdotdev.list`
+  - Modern terminal with AI features
+- **WineHQ** - `winehq-jammy.sources`
+  - Windows compatibility layer
+- **FastFetch** - `zhangsongcui3371-fastfetch-jammy.list`
+  - System information tool (neofetch alternative)
 
 ### Mise
 
