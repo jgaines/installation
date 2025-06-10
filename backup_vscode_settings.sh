@@ -80,6 +80,9 @@ backup_files() {
 
 echo "Starting VS Code settings backup for location: $LOCATION"
 
+# Create new changeset for this backup
+jj new -m "back up $LOCATION vscode settings"
+
 # Create main vscode_settings directory
 create_dir "$REPO_CODE_DIR"
 
