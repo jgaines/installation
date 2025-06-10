@@ -3,32 +3,30 @@
 ## CRITICAL: Source Control Protocol
 
 - ALWAYS create a new changeset BEFORE making any changes:
-
-   ```bash
-   jj new -m "copilot: description of changes"
-   ```
+```bash
+jj new -m "copilot: description of changes"
+```
 
 - ALWAYS verify the current changeset with:
+```bash
+jj log -n 3 --no-pager
+jj show --no-pager
+```
 
-   ```bash
-   jj log -n 3 --no-pager
-   jj show --no-pager
-   ```
-- After completing changes, ALWAYS update the changeset with my prompt and your response in ASCII:
+- After completing changes, ALWAYS update the changeset with my prompt and your response, by writing the text to a temp file then piping it into jj:
 
-   ```bash
-   jj desc -m '''copilot: description of changes
-   
-   jgaines: I want a cool script.
+```bash
+temp_file=$(mktemp)
+cat <<EOF > "$temp_file"
+copilot: description of changes
 
-   copilot: Here is a cool script that does X, Y, and Z.
+jgaines: I want a cool script.
 
-   Script Created Successfully
-   The really_cool.sh script:
-
-   Takes a location parameter (work or play) as required, etc.
-   '''
-   ```
+copilot: Here is a cool script that does X, Y, and Z.
+EOF
+jj desc --stdin < "$temp_file"
+rm -f "$temp_file"
+```
 
 - NEVER change files outside of this repository unless explicitly instructed.   
 
