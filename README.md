@@ -18,41 +18,41 @@ packages.
 This system uses the following custom PPAs and package sources in
 `/etc/apt/sources.list.d/`:
 
-- **Adoptium (Eclipse Temurin JDK)** - `adoptium.list`
+- **Adoptium (Eclipse Temurin JDK)** - [installation](https://adoptium.net/installation/linux/)
   - Provides OpenJDK builds from Eclipse Foundation
-- **Back In Time** - `bit-team-stable-jammy.list`
+- **Back In Time** - [installation](https://launchpad.net/~bit-team/+archive/ubuntu/stable)
   - Backup tool for Linux
-- **Mesa RC** - `ernstp-mesarc-jammy.list`
+- **Mesa RC** - [installation](https://launchpad.net/~ernstp/+archive/ubuntu/mesarc)
   - Release candidate builds of Mesa graphics drivers
-- **Fish Shell** - `fish-shell-release-4-jammy.list`
+- **Fish Shell** - [installation](https://launchpad.net/~fish-shell/+archive/ubuntu/release-4)
   - Modern shell with syntax highlighting and autosuggestions
-- **Fury.io (NuShell & Carapace)** - `fury.list`
+- **Fury.io (NuShell & Carapace)** - [installation](https://www.nushell.sh/book/installation.html)
   - NuShell and rsteube's Carapace shell completion
-- **GitHub CLI** - `github-cli.list`
+- **GitHub CLI** - [installation](https://github.com/cli/cli/blob/trunk/docs/install_linux.md)
   - Official GitHub command line interface
-- **Google Chrome** - `google-chrome.list`
+- **Google Chrome** - [installation](https://www.google.com/chrome/browser/desktop/index.html)
   - Google Chrome web browser
-- **vtrefny Tools** - `home:vtrefny.list`
+- **vtrefny Tools** - [installation](https://software.opensuse.org/download.html?project=home%3Avtrefny&package=udisks2)
   - OpenSUSE Build Service packages
-- **Microsoft Products** - `microsoft-prod.list`
+- **Microsoft Products** - [installation](https://docs.microsoft.com/en-us/dotnet/core/install/linux-ubuntu)
   - Microsoft development tools and runtimes
-- **Minetest** - `minetestdevs-stable-jammy.list`
+- **Minetest** - [installation](https://launchpad.net/~minetestdevs/+archive/ubuntu/stable)
   - Open source voxel game engine
-- **Modular** - `modular-installer.list`
+- **Modular** - [installation](https://docs.modular.com/mojo/manual/get-started/)
   - Modular AI development platform and Mojo language
-- **Mono** - `mono-official-stable.list`
+- **Mono** - [installation](https://www.mono-project.com/download/stable/#download-lin)
   - .NET framework implementation for Linux
-- **Oracle VirtualBox** - `oracle-virtualbox.list`
+- **Oracle VirtualBox** - [installation](https://www.virtualbox.org/wiki/Linux_Downloads)
   - Virtualization software
-- **CKB Next** - `tatokis-ckb-next-git-jammy.list`
+- **CKB Next** - [installation](https://launchpad.net/~tatokis/+archive/ubuntu/ckb-next-git)
   - Corsair keyboard/mouse driver and configuration tool
-- **VS Code** - `vscode.list`
+- **VS Code** - [installation](https://code.visualstudio.com/docs/setup/linux)
   - Microsoft Visual Studio Code editor
-- **Warp Terminal** - `warpdotdev.list`
+- **Warp Terminal** - [installation](https://www.warp.dev/linux)
   - Modern terminal with AI features
-- **WineHQ** - `winehq-jammy.sources`
+- **WineHQ** - [installation](https://wiki.winehq.org/Ubuntu)
   - Windows compatibility layer
-- **FastFetch** - `zhangsongcui3371-fastfetch-jammy.list`
+- **FastFetch** - [installation](https://launchpad.net/~zhangsongcui3371/+archive/ubuntu/fastfetch)
   - System information tool (neofetch alternative)
 
 ### Mise
