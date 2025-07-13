@@ -1,4 +1,5 @@
 tap "homebrew/command-not-found"
+brew "distrobox"
 brew "lazyjj"
 brew "trippy"
 vscode "adotinthevoid.hare-highlighting"
