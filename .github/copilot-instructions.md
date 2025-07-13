@@ -13,10 +13,10 @@ jj log -n 3 --no-pager
 jj show --no-pager
 ```
 
-- After changes, ALWAYS update the changeset with my prompt and your response, by writing the text directly to a temp file then piping it into jj:
+- After changes, ALWAYS update the changeset with my prompt and your response, by writing the text directly to a temp file created in ./steff/ then piping it into jj:
 
 ```bash
-jj desc --stdin < file_with_updated_desc
+jj desc --stdin --author "copilot <copilot@jgaines.com>" < .steff/file_with_updated_desc
 ```
 - Don't forget to delete the temp file after use
 
