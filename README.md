@@ -20,8 +20,6 @@ This system uses the following custom PPAs and package sources in
 
 - **Adoptium (Eclipse Temurin JDK)** - [installation](https://adoptium.net/installation/linux/)
   - Provides OpenJDK builds from Eclipse Foundation
-- **Back In Time** - [installation](https://launchpad.net/~bit-team/+archive/ubuntu/stable)
-  - Backup tool for Linux
 - **Mesa RC** - [installation](https://launchpad.net/~ernstp/+archive/ubuntu/mesarc)
   - Release candidate builds of Mesa graphics drivers
 - **Fish Shell** - [installation](https://launchpad.net/~fish-shell/+archive/ubuntu/release-4)
@@ -30,16 +28,16 @@ This system uses the following custom PPAs and package sources in
   - NuShell and rsteube's Carapace shell completion
 - **GitHub CLI** - [installation](https://github.com/cli/cli/blob/trunk/docs/install_linux.md)
   - Official GitHub command line interface
-- **Google Chrome** - [installation](https://www.google.com/chrome/browser/desktop/index.html)
+- **Google Chrome** - [installation](https://www.ubuntuupdates.org/ppa/google_chrome)
   - Google Chrome web browser
-- **vtrefny Tools** - [installation](https://software.opensuse.org/download.html?project=home%3Avtrefny&package=udisks2)
-  - OpenSUSE Build Service packages
+- **vtrefny Tools** - [installation](https://software.opensuse.org/download/package?package=blivet-gui&project=home%3Avtrefny)
+  - blivet-gui, some sort of disk management tool, OpenSUSE Build Service packages
 - **Microsoft Products** - [installation](https://docs.microsoft.com/en-us/dotnet/core/install/linux-ubuntu)
-  - Microsoft development tools and runtimes
+  - Microsoft development tools and runtimes, might not need this now
 - **Minetest** - [installation](https://launchpad.net/~minetestdevs/+archive/ubuntu/stable)
   - Open source voxel game engine
 - **Modular** - [installation](https://docs.modular.com/mojo/manual/get-started/)
-  - Modular AI development platform and Mojo language
+  - No longer need PPA for Modular(Mojo) as it is now installed via pixi, which is in turn installed via mise.
 - **Mono** - [installation](https://www.mono-project.com/download/stable/#download-lin)
   - .NET framework implementation for Linux
 - **Oracle VirtualBox** - [installation](https://www.virtualbox.org/wiki/Linux_Downloads)
