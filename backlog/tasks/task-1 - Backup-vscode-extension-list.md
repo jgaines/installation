@@ -1,7 +1,7 @@
 ---
 id: task-1
 title: Backup vscode extension list
-status: In Progress
+status: Done
 assignee:
   - '@copilot'
 created_date: '2025-07-13'
@@ -30,3 +30,7 @@ Extend backup_vscode_settings.sh to backup the list of installed VS Code extensi
 5. Call function for both 'code' and 'code-insiders' commands
 6. Update final output to include extension backup status
 7. Test with both VS Code present and absent scenarios
+
+## Implementation Notes
+
+Added backup_extensions function that checks for command availability using 'command -v', creates extensions.txt files in backup directories, and tracks success/failure status. Updated main script to call extension backup for both 'code' and 'code-insiders' commands with proper error handling. Enhanced final output to show extension backup status alongside settings backup. Testing shows 92 VS Code extensions successfully backed up, with graceful handling when VS Code Insiders is not available.
