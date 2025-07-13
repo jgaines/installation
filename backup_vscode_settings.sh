@@ -58,7 +58,7 @@ backup_files() {
     
     if [ ! -d "$source_dir" ]; then
         echo "Warning: $app_name config directory not found: $source_dir"
-        return
+        return 1
     fi
     
     echo "Backing up $app_name settings to: $dest_dir"
@@ -76,6 +76,8 @@ backup_files() {
             echo "  Warning: File not found: $file"
         fi
     done
+    
+    return 0
 }
 
 echo "Starting VS Code settings backup for location: $LOCATION"
@@ -86,13 +88,31 @@ jj new -m "backup_vscode_settings: $LOCATION vscode settings"
 # Create main vscode_settings directory
 create_dir "$REPO_CODE_DIR"
 
-# Backup VS Code settings
-backup_files "$VSCODE_CONFIG_DIR" "$VSCODE_BACKUP_DIR" "VS Code"
+# Backup VS Code settings and track success
+if backup_files "$VSCODE_CONFIG_DIR" "$VSCODE_BACKUP_DIR" "VS Code"; then
+    vscode_success=true
+else
+    vscode_success=false
+fi
 
-# Backup VS Code Insiders settings
-backup_files "$VSCODE_INSIDERS_CONFIG_DIR" "$VSCODE_INSIDERS_BACKUP_DIR" "VS Code Insiders"
+# Backup VS Code Insiders settings and track success
+if backup_files "$VSCODE_INSIDERS_CONFIG_DIR" "$VSCODE_INSIDERS_BACKUP_DIR" "VS Code Insiders"; then
+    vscode_insiders_success=true
+else
+    vscode_insiders_success=false
+fi
 
 echo "Backup completed successfully!"
 echo "Files backed up to:"
-echo "  VS Code: $VSCODE_BACKUP_DIR"
-echo "  VS Code Insiders: $VSCODE_INSIDERS_BACKUP_DIR"
+
+if [ "$vscode_success" = true ]; then
+    echo "  VS Code: $VSCODE_BACKUP_DIR"
+else
+    echo "  VS Code: not found"
+fi
+
+if [ "$vscode_insiders_success" = true ]; then
+    echo "  VS Code Insiders: $VSCODE_INSIDERS_BACKUP_DIR"
+else
+    echo "  VS Code Insiders: not found"
+fi
