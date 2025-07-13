@@ -65,42 +65,15 @@ backup_mise() {
     
     # Copy mise.toml file
     echo "  Copying: mise.toml"
-    cp "$source_dir/mise.toml" "$dest_dir/mise.toml"
+    cp "$source_dir/mise.toml" "$dest_dir/backup.mise.toml"
     
-    # Generate restoration commands
-    echo "  Generating restoration commands..."
-    cat > "$dest_dir/restore_commands.txt" << 'EOF'
-# Commands to restore mise tools from this backup:
-
-# 1. Copy mise.toml back to ~/allmise/
-mkdir -p ~/allmise
-cp mise.toml ~/allmise/
-
-# 2. Install tools from mise.toml
-cd ~/allmise
-mise install
-
-# 3. Alternative: Install tools individually using generated commands below
-EOF
-    
-    # Add individual tool installation commands
-    echo "" >> "$dest_dir/restore_commands.txt"
-    echo "# Individual tool installation commands:" >> "$dest_dir/restore_commands.txt"
-    if grep -vE '^[\[#]' "$source_dir/mise.toml" | sed 's/ = "/@/g' | tr -d '"' | while read -r tool; do
-        if [ -n "$tool" ]; then
-            echo "mise use $tool" >> "$dest_dir/restore_commands.txt"
-        fi
-    done; then
-        local tool_count=$(grep -c "mise use" "$dest_dir/restore_commands.txt" 2>/dev/null || echo 0)
-        echo "  Saved configuration and $tool_count restoration commands"
-        return 0
-    else
-        echo "  Warning: Failed to generate restoration commands"
-        return 1
-    fi
+    return 0
 }
 
 echo "Starting mise settings backup for location: $LOCATION"
+
+# Create new revset for this backup
+jj new -m "backup_mise: $LOCATION mise settings"
 
 # Create main mise_settings directory
 create_dir "$REPO_MISE_DIR"
