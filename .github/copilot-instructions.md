@@ -2,24 +2,24 @@
 
 ## CRITICAL: Source Control Protocol
 
-- ALWAYS create a new changeset BEFORE making any changes:
+- ALWAYS create a new revset BEFORE making any changes:
 ```bash
 jj new -m "copilot: description of changes"
 ```
 
-- ALWAYS verify the current changeset with:
+- ALWAYS verify the current revset with:
 ```bash
 jj log -n 3 --no-pager
 jj show --no-pager
 ```
 
-- After changes, ALWAYS update the changeset with my prompt and your response, by writing the text directly to a temp file then piping it into jj:
+- After changes, ALWAYS update the revset with my prompt and your response, by writing the text directly to a temp file then piping it into jj:
 
 ```bash
 # Use a unique temp file name with timestamp to avoid conflicts
-TEMP_FILE="/tmp/changeset_desc_$(date +%s)_$$.txt"
+TEMP_FILE="/tmp/revset_desc_$(date +%s)_$$.txt"
 cat > "$TEMP_FILE" << 'EOF'
-[changeset description content here]
+[revset description content here]
 EOF
 jj desc --stdin --author "copilot <copilot@jgaines.com>" < "$TEMP_FILE"
 rm "$TEMP_FILE"
