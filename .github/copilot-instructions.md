@@ -13,12 +13,18 @@ jj log -n 3 --no-pager
 jj show --no-pager
 ```
 
-- After changes, ALWAYS update the changeset with my prompt and your response, by writing the text directly to a temp file created in ./steff/ then piping it into jj:
+- After changes, ALWAYS update the changeset with my prompt and your response, by writing the text directly to a temp file then piping it into jj:
 
 ```bash
-jj desc --stdin --author "copilot <copilot@jgaines.com>" < .steff/file_with_updated_desc
+# Use a unique temp file name with timestamp to avoid conflicts
+TEMP_FILE="/tmp/changeset_desc_$(date +%s)_$$.txt"
+cat > "$TEMP_FILE" << 'EOF'
+[changeset description content here]
+EOF
+jj desc --stdin --author "copilot <copilot@jgaines.com>" < "$TEMP_FILE"
+rm "$TEMP_FILE"
 ```
-- Don't forget to delete the temp file after use
+- Use /tmp directory and unique filenames to avoid VS Code file watching conflicts
 
 - NEVER change files outside of this repository unless explicitly instructed.   
 
