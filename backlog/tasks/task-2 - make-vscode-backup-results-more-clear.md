@@ -1,9 +1,10 @@
 ---
 id: task-2
 title: make vscode backup results more clear
-status: To Do
+status: Done
 assignee: []
 created_date: '2025-07-13'
+updated_date: '2025-07-13'
 labels: []
 dependencies: []
 ---
@@ -35,3 +36,7 @@ Files backed up to:
   VS Code: ./vscode_settings/home
   VS Code Insiders: not found
 ```
+
+## Implementation Notes
+
+Modified backup_files function to return proper exit codes (0 for success, 1 for failure). Updated main script logic to capture return codes and track success status for both VS Code and VS Code Insiders. Replaced hardcoded final output with conditional output that shows actual backup paths for successful backups and 'not found' for missing directories. The script now provides accurate feedback about what was actually backed up.
