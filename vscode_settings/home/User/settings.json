@@ -1,92 +1,103 @@
 {
-    // "editor.inlayHint.foreground": "#808080", // Light gray
-    // "editor.inlayHint.background": "rgba(255, 255, 255, 0.1)", // Very light gray background
-    "workbench.editorAssociations": {
-        "*.copilotmd": "vscode.markdown.preview.editor",
-        "*.ipynb": "jupyter-notebook",
-        "*.md": "default"
-    },
-    "[python]": {
-        "editor.formatOnType": true,
-        "editor.defaultFormatter": "charliermarsh.ruff"
-    },
-    "workbench.colorTheme": "Visual Studio Dark",
-    "terminal.integrated.commandsToSkipShell": [
-        "language-julia.interrupt"
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnType": true
+  },
+  "cSpell.userWords": [
+    "Apacer",
+    "jgaines",
+    "NTFS",
+    "nvme",
+    "revset"
+  ],
+  // "chat.instructionsFilesLocations": {
+  //   ".github/CONTRIBUTING.md": true
+  // },
+  "editor.fontFamily": "'FiraCode Nerd Font Mono', 'Droid Sans Mono', 'monospace', monospace",
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "errorLens.excludeBySource": [
+    "cSpell"
+  ],
+  "errorLens.messageEnabled": false,
+  "files.associations": {
+    ".copilot-instructions.md": "markdown"
+  },
+  "files.autoSave": "afterDelay",
+  "files.simpleDialog.enable": true,
+  "git.autofetch": true,
+  "gitblame.ignoreWhitespace": true,
+  "githd.blameView.enabled": false,
+  "github.copilot.advanced": {},
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  // "github.copilot.chat.reviewSelection.instructions": [
+  //   {
+  //     "file": ".copilot-review-instructions.md"
+  //   },
+  //   {
+  //     "text": "Resolve all TODO tasks."
+  //   }
+  // ],
+  "github.copilot.chat.codesearch.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": true
+  },
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "julia.NumThreads": 4,
+  "julia.enableTelemetry": true,
+  "julia.symbolCacheDownload": true,
+  "mise.binPath": "/home/jgaines/.local/bin/mise",
+  "projectManager.git.baseFolders": [
+    "/home/jgaines/projects"
+  ],
+  "python.defaultInterpreterPath": "/home/jgaines/projects/zigup/.venv",
+  "python.experiments.optInto": [],
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.terminal.activateEnvironment": false,
+  "terminal.integrated.automationProfile.linux": {
+    "args": [
+      "--login"
     ],
-    "julia.symbolCacheDownload": true,
-    "julia.enableTelemetry": true,
-    "python.terminal.activateEnvInCurrentTerminal": true,
-    "python.terminal.activateEnvironment": false,
-    "julia.NumThreads": 4,
-    "projectManager.git.baseFolders": [
-        "/home/jgaines/projects"
-    ],
-    "gitblame.ignoreWhitespace": true,
-    "zig.path": "zig",
-    "zig.zls.path": "zls",
-    "githd.blameView.enabled": false,
-    "git.autofetch": true,
-    "workbench.startupEditor": "none",
-    "github.copilot.advanced": {
-        
+    "icon": "terminal-bash",
+    "path": "/bin/bash"
+  },
+  "terminal.integrated.commandsToSkipShell": [
+    "language-julia.interrupt"
+  ],
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "args": [
+        "--login"
+      ],
+      "icon": "terminal-bash",
+      "path": "/bin/bash"
     },
-    "github.copilot.enable": {
-        "*": true
-    },
-    "python.experiments.optInto": [],
-    "cSpell.userWords": [
-        "Apacer",
-        "jgaines",
-        "NTFS",
-        "nvme"
-    ],
-    "errorLens.excludeBySource": [
-        "cSpell"
-    ],
-    "files.autoSave": "afterDelay",
-    "mise.binPath": "/home/jgaines/.local/bin/mise",
-    "codeium.enableConfig": {
-        "*": true,
-        "zig": true,
-        "odin": true
-    },
-    // "editor.inlayHints.fontSize": 10,
-    "editor.fontFamily": "'FiraCode Nerd Font Mono', 'Droid Sans Mono', 'monospace', monospace",
-    "editor.rulers": [
-        80,
-        120
-    ],
-    "editor.inlayHints.enabled": "offUnlessPressed",
-    "python.defaultInterpreterPath": "/home/jgaines/projects/zigup/.venv",
-    "github.copilot.nextEditSuggestions.enabled": true,
-    "window.dialogStyle": "custom",
-    "files.simpleDialog.enable": true,
-    "terminal.integrated.automationProfile.linux": {
-        "path": "/bin/bash",
-        "args": ["--login"],
-        "icon": "terminal-bash"
-    },
-    "terminal.integrated.defaultProfile.linux": "bash",
-    "terminal.integrated.profiles.linux": {
-        "bash": {
-            "path": "/bin/bash",
-            "args": ["--login"],
-            "icon": "terminal-bash"
-        },
-        "zsh": {
-            "path": "/bin/zsh",
-            "icon": "terminal"
-        }
-    },
-    "workbench.iconTheme": "helium-icon-theme",
-    "errorLens.messageEnabled": true,
-    "github.copilot.chat.codeGeneration.useInstructionFiles": true,
-    "files.associations": {
-        ".copilot-instructions.md": "markdown"
-    },
-    "chat.instructionsFilesLocations": {
-        ".github/CONTRIBUTING.md": true
-    },
-    "github.copilot.chat.codesearch.enabled": true
+    "zsh": {
+      "icon": "terminal",
+      "path": "/bin/zsh"
+    }
+  },
+  "window.dialogStyle": "custom",
+  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.ipynb": "jupyter-notebook",
+    "*.md": "default"
+  },
+  "workbench.iconTheme": "helium-icon-theme",
+  "workbench.startupEditor": "none",
+  "zig.path": "zig",
+  "zig.zls.path": "zls",
+  "write-good.only-lint-on-save": true,
+  "write-good.languages": [
+    "markdown",
+    "text"
+  ],
+  "github.copilot.nextEditSuggestions.fixes": true,
+  "docker.extension.enableComposeLanguageServer": false
 }
