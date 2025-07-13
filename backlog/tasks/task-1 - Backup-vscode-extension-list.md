@@ -1,8 +1,9 @@
 ---
 id: task-1
 title: Backup vscode extension list
-status: To Do
-assignee: []
+status: In Progress
+assignee:
+  - '@copilot'
 created_date: '2025-07-13'
 updated_date: '2025-07-13'
 labels: []
