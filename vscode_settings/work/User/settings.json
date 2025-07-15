@@ -18,6 +18,7 @@
     "netscout",
     "pipx",
     "pyproject",
+    "revset",
     "Securden",
     "tzlocal",
     "virtualenv",
@@ -108,9 +109,10 @@
     120
   ],
   "errorLens.excludeBySource": [
-    "cSpell"
+    "cSpell",
+    "Writegood"
   ],
-  "errorLens.messageEnabled": false,
+  "errorLens.messageEnabled": true,
   "files.associations": {
     "01proxy": "debsources"
   },
@@ -119,7 +121,6 @@
   "git.confirmSync": false,
   "git.openRepositoryInParentFolders": "never",
   "git.suggestSmartCommit": false,
-  "gitblame.inlineMessageEnabled": true,
   "gitblame.revsFile": [
     ".git-blame-ignore-revs"
   ],
@@ -137,7 +138,6 @@
   "github.copilot.enable": {
     "markdown": true
   },
-  "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.nextEditSuggestions.fixes": true,
   "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
   "indentRainbow.errorColor": "rgba(128,32,32,0.2)",
@@ -171,12 +171,11 @@
   "python.analysis.aiCodeActions": {},
   "python.analysis.autoFormatStrings": true,
   "python.analysis.autoImportCompletions": true,
-  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.typeCheckingMode": "standard",
   "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
   "python.experiments.optOutFrom": [
     "pythonTerminalEnvVarActivation"
   ],
-  "python.languageServer": "None",
   "python.pyrefly.disableLanguageServices": false,
   "red.redDir": "$HOME/apps/red",
   "redhat.telemetry.enabled": false,
@@ -188,7 +187,6 @@
     "ruff"
   ],
   "security.workspace.trust.untrustedFiles": "open",
-  "terminal.integrated.automationProfile.linux": "bash",
   "terminal.integrated.commandsToSkipShell": [
     "language-julia.interrupt"
   ],
@@ -214,8 +212,94 @@
     "*.ipynb": "jupyter-notebook",
     "*.md": "default"
   },
-  "workbench.iconTheme": "helium-icon-theme",
-  "write-good.write-good-config": {},
   "zig.path": "zig",
-  "zig.zls.enabled": "on"
+  "zig.zls.enabled": "on",
+  "docker.extension.enableComposeLanguageServer": false,
+  "vscode-pets.petColor": "orange",
+  "vscode-pets.theme": "castle",
+  "vscode-pets.throwBallWithMouse": true,
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "gitlens.advanced.messages": {
+    "suppressGitDisabledWarning": true,
+    "suppressGitMissingWarning": true
+  },
+  "actionLauncher.defaultColor": "statusBar.foreground",
+  "actionLauncher.configurationFile": false,
+  "actionLauncher.loadNpmCommands": false,
+  "actionLauncher.reloadButton": "$(refresh)",
+  "actionLauncher.refreshPriority": 50000,
+  "actionLauncher.commands": [
+    {
+      "id": "errorLens",
+      "label": "ELens",
+      "tooltip": "Toggle ErrorLens",
+      "command": "errorLens.toggleInlineMessage",
+      "useVsCodeApi": true
+    },
+    {
+      "id": "cSpell",
+      "label": "cSpell",
+      "tooltip": "Toggle Spelling",
+      "command": "cSpell.toggleEnableSpellChecker",
+      "useVsCodeApi": true
+    },
+    {
+      "id": "git-status",
+      "label": "Git Status",
+      "command": "git status",
+      "showButton": false,
+      "terminal": {
+        "name": "Git",
+        "focus": false,
+        "singleInstance": true,
+        "clear": false
+      }
+    },
+    {
+      "id": "git-status-short",
+      "label": "Git Status Short",
+      "command": "git status --short --branch",
+      "showButton": false,
+      "terminal": {
+        "name": "Git",
+        "focus": false,
+        "singleInstance": true,
+        "clear": false
+      }
+    },
+    {
+      "id": "git-log",
+      "label": "Git Log",
+      "command": "git log --oneline --graph --decorate --all -20",
+      "showButton": false,
+      "terminal": {
+        "name": "Git",
+        "focus": false,
+        "singleInstance": true,
+        "clear": false
+      }
+    },
+  ],
+  "actionLauncher.dropdowns": [
+    {
+      "id": "git-dropdown",
+      "label": "git",
+      "commands": ["git-status", "git-status-short", "git-log"],
+      "options": {
+        "ignoreFocusOut": true,
+        "title": "Git Commands",
+      }
+    }
+  ],
+  "errorLens.enabled": true,
+  "errorLens.codeLensEnabled": false,
+  "jjk.enableAnnotations": false,
+  "python.analysis.languageServerMode": "full",
+  "errorLens.enabledDiagnosticLevels": [
+    "error",
+    "warning",
+    "info"
+  ],
+  "harmonylang.pythonPath": "/usr/bin/python3",
+  "python.analysis.diagnosticsSource": "Pyright"
 }

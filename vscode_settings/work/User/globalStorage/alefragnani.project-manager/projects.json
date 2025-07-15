@@ -380,8 +380,8 @@
 		"enabled": true
 	},
 	{
-		"name": "installation",
-		"rootPath": "/home/jgaines/installation/installation.code-workspace",
+		"name": "instructions",
+		"rootPath": "/home/jgaines/git/jgaines/instructions/instructions.code-workspace",
 		"paths": [],
 		"tags": [],
 		"enabled": true
