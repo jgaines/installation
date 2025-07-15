@@ -91,7 +91,6 @@ echo "Files backed up to:"
 if [ "$mise_success" = true ]; then
     echo "  mise: $MISE_BACKUP_DIR"
     echo "    Configuration: backed up"
-    echo "    Restoration commands: generated"
 else
     echo "  mise: not found"
 fi
