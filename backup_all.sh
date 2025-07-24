@@ -27,4 +27,4 @@ fi
 
 ./backup_brew.sh "$LOCATION"
 ./backup_mise.sh "$LOCATION"
-./backup_vscode_settings.sh "$LOCATION"
+./backup_vscode.sh "$LOCATION"
