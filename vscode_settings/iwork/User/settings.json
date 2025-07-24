@@ -19,6 +19,7 @@
     "netscout",
     "pipx",
     "pyproject",
+    "revset",
     "Securden",
     "tzlocal",
     "virtualenv",
@@ -161,7 +162,7 @@
   "python.analysis.autoFormatStrings": true,
   "python.analysis.autoImportCompletions": true,
   "python.analysis.typeCheckingMode": "basic",
-  "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+  "python.defaultInterpreterPath": "/home/jgaines/.local/latest/python",
   "python.experiments.optOutFrom": [
     "pythonTerminalEnvVarActivation"
   ],
