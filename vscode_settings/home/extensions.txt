@@ -19,6 +19,7 @@ fill-labs.dependi
 github.copilot
 github.copilot-chat
 github.remotehub
+github.vscode-github-actions
 golang.go
 google.geminicodeassist
 gruntfuggly.todo-tree
@@ -50,6 +51,7 @@ ms-python.debugpy
 ms-python.isort
 ms-python.python
 ms-python.vscode-pylance
+ms-python.vscode-python-envs
 ms-toolsai.jupyter
 ms-toolsai.jupyter-keymap
 ms-toolsai.jupyter-renderers

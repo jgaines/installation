@@ -23,9 +23,9 @@
     "cSpell"
   ],
   "errorLens.messageEnabled": false,
-  "files.associations": {
-    ".copilot-instructions.md": "markdown"
-  },
+  // "files.associations": {
+  //   ".copilot-instructions.md": "markdown"
+  // },
   "files.autoSave": "afterDelay",
   "files.simpleDialog.enable": true,
   "git.autofetch": true,
