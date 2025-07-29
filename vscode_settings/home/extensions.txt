@@ -80,6 +80,7 @@ redhat.vscode-yaml
 royaction.color-manager
 rust-lang.rust-analyzer
 spgoding.datapack-language-server
+sst-dev.opencode
 streetsidesoftware.code-spell-checker
 tamasfe.even-better-toml
 travisthetechie.write-good-linter
